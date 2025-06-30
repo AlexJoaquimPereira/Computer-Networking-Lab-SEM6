@@ -52,7 +52,7 @@ void Dijkstra(int src) {
                 dist[v] = dist[u] + graph[u][v];
             }
         }
-        printTable(count + 2);
+        printTable(count);
     }
 }
 

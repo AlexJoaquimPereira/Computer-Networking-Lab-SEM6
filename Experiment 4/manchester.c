@@ -5,6 +5,7 @@
 // Differential Manchester Encoding
 void differentialManchester(char str[]){
     int prev = 0;
+    printf("Differential Manchester: ");
     for (int i = 0; i < strlen(str); i++){
         if (str[i] == '0'){
             printf("%d%d",prev,!prev);
@@ -18,10 +19,12 @@ void differentialManchester(char str[]){
             return;
         }
     }
+    printf("\n");
 }
 
 // Manchester Encoding
 void manchester(char *str){
+    printf("Manchester: ");
     for (int i = 0; i < strlen(str); i++){
         if (str[i] == '0')
             printf("10");
